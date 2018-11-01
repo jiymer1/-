@@ -1,0 +1,203 @@
+/*清除元素的默认属性*/
+*{
+    margin:0;
+    padding:0;
+  font-size: 12px;
+}
+body{
+    background-color:#F5F5F5;
+}
+.top{
+    width:100%;
+    height:27px;
+    background:url(images/top_bg.jpg)repeat-x;
+}
+.top-content{
+    width:1000px;
+    margin:0 auto;/*设置div宽度后，再设置此属性就可以居中设置*/
+}
+.top-content li{
+    list-style-image:url(images/li_bg.gif);
+	float:right; /*使所有列表项由垂直排列改为水平排列，这会更改列表项的顺序，按照实际效果微调顺序*/
+	width:70px;/*设置列表项的宽度，调节列表的间距*/
+	line-height:27px;/*设置行高等于盒子的高度，可以实现一行文字在垂直方向上居中*/
+}
+.top-content li a:link,.top-content li a:visited{
+    color:#8e8e8e;
+    text-decoration:none;/*去掉超链接下划线及更改超链接的默认样式*/
+}
+.top_content a:hover, .top_content a:active {
+    color: #C00;
+    text-decoration: none;
+}
+.wrap{
+width:1000px;
+margin:0 auto;
+}
+.logo{
+	height:80px;/*浮动后,高度塌陷了,最好设置一个大于或等于图片logo的高度,也就是82px*/
+    background-color:white;/*使整个logo区的背景颜色一致*/
+}
+.logo-left{
+width:200px;
+float:left;
+}
+.logo-right{
+width:300px;
+float:right;
+height:28px;/*logo_right包含这个img标签，这个"tel.jpg“ 的高度是28px；容器的高度由内容的高度决定。*/
+margin-top:30px;
+color:#8E8E8E;
+}
+.logo-right img{
+	vertical-align: middle;/*middle属性是相对于父元素垂直居中，文字其实是写在父元素div里的，所以设置后图片就相对父元素（也就是文字）垂直居中*/
+	margin-right:10px;
+}
+.tel{
+	font-family:"Microsoft JhengHei"
+}
+.nav{
+	height:40px;
+    clear:both;/*清除nav两侧的浮动*/
+	}
+.nav_left{
+		width:10px;
+
+		background:url(images/nav_left.jpg) no-repeat;
+}
+.nav_mid{
+	     width:980px;
+         background:url(images/nav_bg.jpg) repeat-x;
+          line-height:40px/*设置行高等于盒子的高度，可以实现一行文字在垂直方向上居中*/
+        }
+.nav_right{
+		width:10px;
+        background:url(images/nav_right.jpg) no-repeat;
+		}
+.nav_left,.nav_mid,.nav_right{
+    height:40px;/*设置导航左和导航右的高度，撑开div,否则没有效果显现*/
+    float:left;
+    display:inline;/*使垂直方向排列的div改为水平方向排列*/
+
+}
+.nav_mid_left,.nav_mid_right{
+    float:left;
+}
+.nav_mid_left{
+    width:680px;
+}
+.nav_mid_right{
+    width:300px;
+}
+.nav_mid_left li{
+    float:left;/*使垂直方向排列的列表改为水平方向排列*/
+    list-style-type: none;
+    width:100px;
+    line-height:40px;/*设置行高等于盒子的高度，可以实现一行文字在垂直方向上居中*/
+    text-align:center;
+}
+.nav_mid a:link, .nav_mid a:visited {
+     font-size: 16px;
+     color: #FFF;
+     text-decoration: none;
+ }
+.nav_mid a:hover, .nav_mid a:active {
+    font-size: 16px;
+    color: #FF0;
+    text-decoration: none;
+}
+
+.search_box{
+    width:190px;
+    height:25px;
+    background:url(images/search.jpg)no-repeat right center;/*设置背景图像，背景图像重复方式，以及背景图像的位置*/
+    background-color: white;
+    padding-right:25px;
+    border: 1px solid #FFF;
+}
+.ad{
+    height:310px;
+    overflow:hidden;/*元素溢出之后会被隐藏*/
+
+}
+.
+}
+.copyright{
+    width:100%;
+    height:200px;
+    background-color:#e8e8e8;
+    margin-top:10px;
+}
+.copyright_content{
+    width:1000px;
+    margin:0 auto;
+    padding-top:20px;
+    clear:both;
+}
+.copyright_content li{
+    float:left;
+    list-style-type: none;
+    width:200px;
+    line-height:30px;
+    text-align: center;
+    font-family:"Microsoft JhengHei";
+    background:url(images/line.png)no-repeat right center;
+}
+.copyright_content a{
+    text-decoration: none;
+    color:#999;
+    font-size:18px;
+}
+.copyright_content li ul li a{
+    font-size:14px;
+}
+.list_main{
+    min-height:350px;
+    _height:350px;
+    background-color: white;
+    margin-top: 10px;
+}
+.news_type{
+    width:220px;
+    height:350px;
+    border:1px solid #e8e8e8;
+
+    float:left;
+}
+.list_box{
+    width:770px;
+    min-height:350px;/*不要定义固定高度，有时内容会溢出*/
+    _height:350px;/*IE6兼容格式*/
+    background-color:#F9F;
+   float:right;
+}
+.news_type h2{
+    height:35px;
+    line-height:35px;
+    font-size:14px;
+    color:#666;
+    background:url(images/titile_bg.gif)repeat-x;
+    padding-left:20px;
+}
+.news_type_content{
+    height:365px;
+    background:url(images/content_bg.gif)repeat-x;
+}
+.news_type_content li {
+    list-style-type: none;
+    height:30px;
+    line-height:30px;
+    padding-top:10px
+}
+.news_type_content li a{
+    text-decoration:none;
+    color:#666;
+    background:url(images/li_bg.gif)no-repeat left center;
+    display:block;
+    padding-left:15px;
+}
+.news_type_content li a:hover{
+    color:#009cdf;
+    background:url(images/li_bg2.gif)no-repeat left center;
+    background-color:#f2f2f2;
+}
